@@ -1,13 +1,23 @@
-<?php
-/**Estrutura else**/
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ambiente para estudo PHP - eXcript</title>
 
-$idade = 20;
-
-    if($idade >= 18){
-        echo "A pessoa é de maior";
-    }else{
-        echo "A pessoa é de menor";
-    }
-
+</head>
+    <?php
+        if (isset($_POST["valor1"])) {
+            echo $_POST["valor1"];
+        }
+    ?>
 
 
+
+
+<body>
+    <form method="POST">
+        <input type="text" name="valor1"/>
+         <input type="submit"/>
+    </form>
+</body>
+</html>
